@@ -17,17 +17,17 @@ export default class Navbar extends React.Component {
                             className={'nav-item nav-link'}
                             to="/"
                             activeClassName="active" exact
-                        >Начало</NavLink>
+                        ><i className="fa fa-home"></i> Начало</NavLink>
                         <NavLink
                             className={'nav-item nav-link'}
                             to="/map"
                             activeClassName="active"
-                        >Карта</NavLink>
+                        ><i className="fa fa-map"></i> Карта</NavLink>
                         <NavLink
                             className={'nav-item nav-link'}
                             to="/search-city"
                             activeClassName="active"
-                        >Търсене</NavLink>
+                        ><i className="fa fa-search"></i> Търсене</NavLink>
                     </div>
                 </div>
             </nav>

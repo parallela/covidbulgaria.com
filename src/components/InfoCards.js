@@ -51,7 +51,7 @@ export default class InfoCards extends React.Component {
                     <div className="col-md-4 mt-3">
                         <div className="card text-center">
                             <div className="card-header">
-                                Последни статистики
+                                <i className="fas fa-clock"></i> Последни статистики
                             </div>
                             <div className="card-body">
                                 <blockquote className="blockquote">
@@ -76,14 +76,22 @@ export default class InfoCards extends React.Component {
                     </div>
                     <div className="col-md-4 mt-3">
                         <div className="card text-center">
-                            <div className="card-header text-danger">
-                                Починали от вируса
+                            <div className="card-header" style={{color: 'red'}}>
+                                <i className="fas fa-skull-crossbones"></i> Починали от вируса
                             </div>
                             <div className="card-body">
                                 <blockquote className="blockquote">
                                     <div className="card-text">
                                         <h3>{covidStats.fatal}</h3>
                                     </div>
+                                    <footer className="blockquote-footer"style={{color: 'red'}}>Общо</footer>
+                                </blockquote>
+                                <hr/>
+                                <blockquote className="blockquote">
+                                    <div className="card-text">
+                                        <h3>{todayStats.fatal[new Date().toISOString().slice(0,10)].cases}</h3>
+                                    </div>
+                                    <footer className="blockquote-footer" style={{color: 'red'}}>Днес</footer>
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
@@ -94,7 +102,7 @@ export default class InfoCards extends React.Component {
                     <div className="col-md-4 mt-3">
                         <div className="card text-center">
                             <div className="card-header">
-                                Заразени / Излекувани <strong>днес</strong>
+                                <i className="fas fa-calendar-day"></i> Заразени / Излекувани <strong>днес</strong>
                             </div>
                             <div className="card-body">
                                 <blockquote className="blockquote">

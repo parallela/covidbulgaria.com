@@ -31,7 +31,7 @@ export default class Search extends React.Component {
         await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
             method: 'GET',
         }).then(res => res.json()).then((result) => {
-            if(result[city] === undefined) {
+            if (result[city] === undefined) {
                 this.setState({showCard: false});
             } else {
                 this.setState({
@@ -60,25 +60,28 @@ export default class Search extends React.Component {
     render() {
         const {cityData, showCard} = this.state;
         return (
-            <div className="container mt-5 mb-3">
+            <div id="search">
                 <ParticleElement />
+                <div className="container mt-5 mb-3">
 
-                <h3>Вижте информация за вашия град:</h3>
 
-                <AsyncTypeahead
-                    {...this.state}
-                    id="async-city-search"
-                    labelKey="cityname"
-                    minLength={1}
-                    onSearch={this._handleSearch}
-                    onChange= {this._handleChange}
-                    placeholder="Името на града Ви..."
-                />
+                    <h3>Вижте информация за вашия град:</h3>
 
-                {showCard &&
-                <DataCard city={cityData} />
-                }
+                    <AsyncTypeahead
+                        {...this.state}
+                        id="async-city-search"
+                        labelKey="cityname"
+                        minLength={1}
+                        onSearch={this._handleSearch}
+                        onChange={this._handleChange}
+                        placeholder="Името на града Ви..."
+                    />
 
+                    {showCard &&
+                    <DataCard city={cityData}/>
+                    }
+
+                </div>
             </div>
         );
     }

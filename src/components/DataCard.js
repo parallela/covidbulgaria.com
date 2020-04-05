@@ -19,7 +19,7 @@ export default class DataCard extends React.Component {
                     <div className="text-center">
                     <h5><strong>Заразени:</strong> {this.props.city.infected}</h5>
                     <h5><strong className={'text-success'}>Излекувани:</strong> {this.props.city.cured}</h5>
-                    <h5><strong className={'text-danger'}>Фатални:</strong> {this.props.city.fatal}</h5>
+                    <h5><strong style={{color: 'red'}}>Фатални:</strong> {this.props.city.fatal}</h5>
                     </div>
                 </div>
             </div>
