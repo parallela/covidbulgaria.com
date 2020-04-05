@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Zz7MOd7k7U6DhGK7ck3K4S9TmJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\covid-bg\my-app\public\images" />
+      <recent name="C:\laragon\www\covid-bg\my-app\public" />
+      <recent name="C:\laragon\www\covid-bg\my-app\src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="" />
+      <created>1585830020778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585830020778</updated>
+      <workItem from="1585830033282" duration="10702000" />
+      <workItem from="1585992663267" duration="20167000" />
+      <workItem from="1586028423600" duration="2571000" />
+      <workItem from="1586074754592" duration="11462000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="276" y="25" key="#ESLint" timestamp="1585830275760">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="276" y="25" key="#ESLint/0.0.1360.724@0.0.1360.724" timestamp="1585830275760" />
+    <state x="276" y="25" key="#Inspections" timestamp="1585830544105">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="276" y="25" key="#Inspections/0.0.1360.724@0.0.1360.724" timestamp="1585830544105" />
+    <state x="207" y="0" key="SettingsEditor" timestamp="1585830240515">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="207" y="0" key="SettingsEditor/0.0.1360.724@0.0.1360.724" timestamp="1585830240515" />
+    <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585839164268">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.724@0.0.1360.724" timestamp="1585839164268" />
+    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup" timestamp="1586004960384">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup/0.0.1360.724@0.0.1360.724" timestamp="1586004960384" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/InfoCards.js</url>
+          <line>48</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Home.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/AlertCard.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
