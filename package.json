@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "CovidBulgaria.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-bootstrap-typeahead": "^5.0.0-alpha.1",
+    "react-device-detect": "^1.11.14",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.6.3",
     "react-moment": "^0.9.7",

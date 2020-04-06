@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="" />
+    <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCards.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/Navbar.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1Zz7MOd7k7U6DhGK7ck3K4S9TmJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -30,6 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -38,6 +49,22 @@
       <recent name="C:\laragon\www\covid-bg\my-app\public" />
       <recent name="C:\laragon\www\covid-bg\my-app\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,7 +79,10 @@
       <workItem from="1585830033282" duration="10702000" />
       <workItem from="1585992663267" duration="20167000" />
       <workItem from="1586028423600" duration="2571000" />
-      <workItem from="1586074754592" duration="15297000" />
+      <workItem from="1586074754592" duration="15598000" />
+      <workItem from="1586103156850" duration="1495000" />
+      <workItem from="1586112593420" duration="114000" />
+      <workItem from="1586164016736" duration="7935000" />
     </task>
     <servers />
   </component>
@@ -68,6 +98,30 @@
       <screen x="0" y="0" width="1360" height="724" />
     </state>
     <state x="276" y="25" key="#Inspections/0.0.1360.724@0.0.1360.724" timestamp="1585830544105" />
+    <state x="139" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586165057437">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="139" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.724@0.0.1360.724" timestamp="1586165057437" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1586165032773">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1360.724@0.0.1360.724" timestamp="1586165032773" />
+    <state width="1339" height="175" key="GridCell.Tab.0.bottom" timestamp="1586165459421">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state width="1339" height="175" key="GridCell.Tab.0.bottom/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
+    <state width="1339" height="175" key="GridCell.Tab.0.center" timestamp="1586165459421">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state width="1339" height="175" key="GridCell.Tab.0.center/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
+    <state width="1339" height="175" key="GridCell.Tab.0.left" timestamp="1586165459420">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state width="1339" height="175" key="GridCell.Tab.0.left/0.0.1360.724@0.0.1360.724" timestamp="1586165459420" />
+    <state width="1339" height="175" key="GridCell.Tab.0.right" timestamp="1586165459421">
+      <screen x="0" y="0" width="1360" height="724" />
+    </state>
+    <state width="1339" height="175" key="GridCell.Tab.0.right/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
     <state x="207" y="0" key="SettingsEditor" timestamp="1585830240515">
       <screen x="0" y="0" width="1360" height="724" />
     </state>
@@ -76,19 +130,14 @@
       <screen x="0" y="0" width="1360" height="724" />
     </state>
     <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.724@0.0.1360.724" timestamp="1585839164268" />
-    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup" timestamp="1586004960384">
+    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup" timestamp="1586166221249">
       <screen x="0" y="0" width="1360" height="724" />
     </state>
-    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup/0.0.1360.724@0.0.1360.724" timestamp="1586004960384" />
+    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup/0.0.1360.724@0.0.1360.724" timestamp="1586166221249" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/InfoCards.js</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Home.js</url>
           <line>5</line>
@@ -97,7 +146,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/AlertCard.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

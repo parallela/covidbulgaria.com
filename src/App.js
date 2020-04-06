@@ -13,8 +13,8 @@ export default class App extends React.Component {
                 <Router>
                     <Navbar/>
                     <Route path={'/'} exact component={Home}/>
-                    <Route path={'/map'} exact component={MapView}/>
-                    <Route path={'/search-city'} exact component={Search}/>
+                    <Route path={'/map'} component={MapView}/>
+                    <Route path={'/search-city'} component={Search}/>
                 </Router>
             </main>
         )
