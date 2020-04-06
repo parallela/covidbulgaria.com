@@ -16,7 +16,7 @@ export default class AlertCard extends React.Component {
                         <a href={'https://www.mh.government.bg/bg/'}>Министерство на здравеопазването</a>
                     </p>
 
-                    <small>Creator: Lubomir Stankov</small><br />
+                    <small>Creators: Lubomir Stankov, Peter Petrov, Yordan Cvetomirov</small><br />
                     <small>Data source: <a href={'https://github.com/COVID-19-Bulgaria/virus-tracker'}>COVID19-Bulgaria</a></small><br />
                     <small>Source code: <a href={'https://github.com/parallela/covidbulgaria.com'}>Github</a></small>
 
