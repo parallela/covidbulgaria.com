@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/TitleControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ParticleElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticleElement.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +40,18 @@
     <setting file="file://$PROJECT_DIR$/src/components/Navbar.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1Zz7MOd7k7U6DhGK7ck3K4S9TmJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -41,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="C:\laragon\www\covid-bg\my-app\src\components" />
       <recent name="C:\laragon\www\covid-bg\my-app\public\images" />
       <recent name="C:\laragon\www\covid-bg\my-app\public" />
@@ -80,17 +106,31 @@
       <workItem from="1586103156850" duration="1495000" />
       <workItem from="1586112593420" duration="114000" />
       <workItem from="1586164016736" duration="21636000" />
+      <workItem from="1586260529134" duration="740000" />
+      <workItem from="1586261658356" duration="2758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="276" y="25" key="#ESLint" timestamp="1585830275760">
-      <screen x="0" y="0" width="1360" height="724" />
+    <state x="315" y="53" width="298" height="178" key="#ESLint" timestamp="1586260945283">
+      <screen x="49" y="27" width="1311" height="741" />
     </state>
     <state x="276" y="25" key="#ESLint/0.0.1360.724@0.0.1360.724" timestamp="1585830275760" />
+    <state x="315" y="53" width="298" height="178" key="#ESLint/49.27.1311.741@49.27.1311.741" timestamp="1586260945283" />
     <state x="276" y="25" key="#Inspections" timestamp="1585830544105">
       <screen x="0" y="0" width="1360" height="724" />
     </state>
@@ -127,10 +167,11 @@
       <screen x="0" y="0" width="1360" height="724" />
     </state>
     <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.724@0.0.1360.724" timestamp="1585839164268" />
-    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup" timestamp="1586166221249">
-      <screen x="0" y="0" width="1360" height="724" />
+    <state x="380" y="73" width="672" height="694" key="search.everywhere.popup" timestamp="1586261998014">
+      <screen x="49" y="27" width="1311" height="741" />
     </state>
     <state x="343" y="45" width="672" height="678" key="search.everywhere.popup/0.0.1360.724@0.0.1360.724" timestamp="1586166221249" />
+    <state x="380" y="73" width="672" height="694" key="search.everywhere.popup/49.27.1311.741@49.27.1311.741" timestamp="1586261998014" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

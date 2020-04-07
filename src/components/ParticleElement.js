@@ -13,10 +13,10 @@ var particlesParams = {
             }
         },
         "size": {
-            "value": 3,
+            "value": 2,
             "random": true,
             "anim": {
-                "speed": 4,
+                "speed": 3,
                 "size_min": 0.3
             }
         },
@@ -25,8 +25,8 @@ var particlesParams = {
         },
         "move": {
             "random": true,
-            "speed": 1,
-            "direction": "top",
+            "speed": 3,
+            "direction": "center",
             "out_mode": "out"
         }
     },

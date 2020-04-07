@@ -193,7 +193,7 @@ export default class InfoCards extends React.Component {
                                     <div className="card-text">
                                         <h3>{covidStats.medical_staff}</h3>
                                     </div>
-                                    <footer className="blockquote-footer text-danger">Засегнати
+                                    <footer className="blockquote-footer" style={{color: 'red'}}>Засегнати
                                         медицински лица
                                     </footer>
                                 </blockquote>
