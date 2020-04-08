@@ -56,6 +56,11 @@ export default class Navbar extends React.Component {
                             to="/privacy-policy"
                             activeClassName="active"
                         ><i className="fa fa-info"></i> Политика за поверителност</NavLink>
+                        <NavLink
+                            className={'nav-item nav-link'}
+                            to="/details-stats"
+                            activeClassName="active"
+                        ><i className="fa fa-info-circle"></i> Детайлна статистика <small className={'text-danger'}>(BETA) (Only for desktops)</small> </NavLink>
 
                     </div>
 

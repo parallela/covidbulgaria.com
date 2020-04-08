@@ -7,7 +7,7 @@ import Search from "./components/Search";
 import Privacy from "./components/Privacy";
 import {setTitle} from "./functions/TitleControl";
 import Cookie from "./components/Cookie";
-
+import DetailedStats from "./components/detailedstats/Main";
 
 export default class App extends React.Component {
 
@@ -25,6 +25,7 @@ export default class App extends React.Component {
                     <Route path={'/map'} component={MapView}/>
                     <Route path={'/search-city'} component={Search}/>
                     <Route path={'/privacy-policy'} component={Privacy}/>
+                    <Route path={'/details-stats'} component={DetailedStats} />
                     <Cookie />
                 </Router>
             </main>
