@@ -17,7 +17,7 @@ export default class ChartInfected extends React.Component {
                             xtitle={"Засегнати"}
                             ytitle={"Дати"}
                             colors={['#f6c23e', '#1cc88a', '#e74a3b']}
-                            download={{ background: '#ffffff', filename: 'covidbulgaria.com / STATS / Cases' }}
+                            download={{ background: '#ffffff', filename: 'covidbulgaria.com / STATS / Cases.png' }}
                            />
                     </div>
                 </div>
