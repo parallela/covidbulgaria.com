@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../src/components/detailedstats/components/LoaderAnimation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/detailedstats/components/Chart-Infected.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/detailedstats/components/Chart-Infected.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/InfoCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/detailedstats/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/detailedstats/components/LeftSideCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/detailedstats/components/LeftSideCards.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +114,8 @@
       <workItem from="1586286684940" duration="918000" />
       <workItem from="1586331919307" duration="18285000" />
       <workItem from="1586358144513" duration="10588000" />
-      <workItem from="1586377995069" duration="36000" />
+      <workItem from="1586377995069" duration="341000" />
+      <workItem from="1586418294485" duration="3923000" />
     </task>
     <servers />
   </component>

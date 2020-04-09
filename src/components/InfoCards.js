@@ -1,5 +1,6 @@
 import React from "react";
 import Moment from "react-moment";
+import LoaderAnimation from "./detailedstats/components/LoaderAnimation";
 
 Moment.globalLocale = 'bg';
 
@@ -7,7 +8,7 @@ export default class InfoCards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isNotLoadingData: false,
+            loading: true,
             covidStats: [],
             todayStats: [],
             mostInfectedCity: [],
@@ -39,7 +40,7 @@ export default class InfoCards extends React.Component {
             })
         });
         this.setState({
-            isNotLoadingData: true
+            loading: false
         });
     }
 
@@ -53,11 +54,14 @@ export default class InfoCards extends React.Component {
     }
 
     render() {
-        const {covidStats, isNotLoadingData, todayStats, mostInfectedCity} = this.state;
-        if (isNotLoadingData) {
-            return (
+        const {covidStats, loading, todayStats, mostInfectedCity} = this.state;
+        return (
+            <div id="stats" >
+                {loading &&
+                <LoaderAnimation/>
+                }
+                {!loading &&
                 <div className="row">
-
                     <div className="col-md-4 mt-3">
                         <div className="card text-center">
                             <div className="card-header">
@@ -213,12 +217,8 @@ export default class InfoCards extends React.Component {
                         </div>
                     </div>
                 </div>
-            )
-        } else {
-            return (
-                <div>Извличане на данните... Моля изчакайте...</div>
-            )
-        }
+                }
+            </div>
+        )
     }
-
 }

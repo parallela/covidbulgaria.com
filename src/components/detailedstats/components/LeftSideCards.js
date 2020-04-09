@@ -7,16 +7,16 @@ export default class LeftSideCards extends React.Component {
                 <div className="card border-dark mb-3">
                     <div className="card-header"><i className="fas fa-disease"></i> Общо заразени</div>
                     <div className="card-body text-center text-dark">
-                        <p className="card-text h6" style={{color: 'red'}}>{this.props.statistics.infected}</p>
+                        <p className="card-text h3" style={{color: 'red'}}>{this.props.statistics.infected}</p>
                     </div>
                 </div>
                 <div className="card border-dark mb-3">
                     <div className="card-header"><i className="fas fa-disease"></i> Най-засегнат град</div>
                     <div className="card-body text-center text-dark">
-                        <p className="card-text h6"
+                        <p className="card-text h3"
                            style={{color: 'red'}}>{this.props.cities[0][0]}</p>
-                        <small>Заразени: <span
-                            style={{color: 'red'}}>{this.props.cities[0][1]["infected"]}</span></small>
+                        <p className="h6">Заразени: <span
+                            style={{color: 'red'}}>{this.props.cities[0][1]["infected"]}</span></p>
                     </div>
                 </div>
                 <div className="card border-dark mb-3">

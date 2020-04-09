@@ -8,6 +8,7 @@ import Timer from "react-compound-timer";
 import Cured from "./components/Cured";
 import ChartInfected from "./components/Chart-Infected";
 import ChartGender from "./components/Chart-Gender";
+import LoaderAnimation from "./components/LoaderAnimation";
 
 
 export default class DetailedStats extends React.Component {
@@ -48,7 +49,7 @@ export default class DetailedStats extends React.Component {
                 });
             })
         this.setState({
-           loading: false
+            loading: false
         });
     }
 
@@ -63,18 +64,21 @@ export default class DetailedStats extends React.Component {
             <div id="DetailedStats">
                 <ParticleElement/>
                 <div className="container-fluid mb-2 mt-4 ">
-                    <small style={{color: 'white'}}>Обновено преди: <Timer><Timer.Seconds /></Timer> секунди.</small>
                     {loading &&
-                    <div>Зареждане....</div>
+                    <LoaderAnimation loading={loading}/>
                     }
                     {!loading &&
-                    <div className="row">
-                        <LeftSideCards statistics={covidStats} cities={cities}/>
-                        <MapView cities={cities}/>
-                        <Deaths cities={cities}/>
-                        <Cured cities={cities}/>
-                        <ChartInfected chart={chartData}/>
-                        <ChartGender statistics={covidStats}/>
+                    <div id="detailed-statistic">
+                        <small style={{color: 'white'}}>Обновено
+                            преди: <Timer><Timer.Seconds/></Timer> секунди.</small>
+                        <div className="row">
+                            <LeftSideCards statistics={covidStats} cities={cities}/>
+                            <MapView cities={cities}/>
+                            <Deaths cities={cities}/>
+                            <Cured cities={cities}/>
+                            <ChartInfected chart={chartData}/>
+                            <ChartGender statistics={covidStats}/>
+                        </div>
                     </div>
                     }
                 </div>
