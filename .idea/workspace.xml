@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/components/detailedstats/components/LoaderAnimation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/InfoCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/detailedstats/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/detailedstats/components/LeftSideCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/detailedstats/components/LeftSideCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../src/components/detailedstats/components/LeftSideCards.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../src/components/Navbar.js" root0="SKIP_INSPECTION" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Zz7MOd7k7U6DhGK7ck3K4S9TmJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -116,6 +107,7 @@
       <workItem from="1586358144513" duration="10588000" />
       <workItem from="1586377995069" duration="341000" />
       <workItem from="1586418294485" duration="3923000" />
+      <workItem from="1586708075528" duration="169000" />
     </task>
     <servers />
   </component>

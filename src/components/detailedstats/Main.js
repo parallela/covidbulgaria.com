@@ -70,7 +70,7 @@ export default class DetailedStats extends React.Component {
                     {!loading &&
                     <div id="detailed-statistic">
                         <small style={{color: 'white'}}>Обновено
-                            преди: <Timer><Timer.Seconds/></Timer> секунди.</small>
+                            преди <Timer><Timer.Seconds/></Timer> секунди.</small>
                         <div className="row">
                             <LeftSideCards statistics={covidStats} cities={cities}/>
                             <MapView cities={cities}/>
