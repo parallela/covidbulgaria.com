@@ -18,17 +18,14 @@ export default class Search extends React.Component {
     };
 
     _handleSearch = (query) => {
+        setTimeout(() => {
+            this.getCityData(query)
+        },1000);
         this.setState({isLoading: true})
-        this.getCityData(query);
-
-    };
-
-    _handleChange = (input) => {
-        this._handleSearch(input.toString())
     };
 
     async getCityData(city) {
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
+        await fetch('https://raw.giubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
             method: 'GET',
         }).then(res => res.json()).then((result) => {
             if (result[city] === undefined) {
@@ -61,7 +58,7 @@ export default class Search extends React.Component {
         const {cityData, showCard} = this.state;
         return (
             <div id="search">
-                <ParticleElement />
+                <ParticleElement/>
                 <div className="container mt-5 mb-3">
 
 
@@ -73,7 +70,7 @@ export default class Search extends React.Component {
                         labelKey="cityname"
                         minLength={1}
                         onSearch={this._handleSearch}
-                        onChange={this._handleChange}
+                        onChange={this._handleSearch}
                         placeholder="Името на града Ви..."
                     />
 

@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,6 +82,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -108,11 +109,12 @@
       <workItem from="1586377995069" duration="341000" />
       <workItem from="1586418294485" duration="3923000" />
       <workItem from="1586708075528" duration="169000" />
+      <workItem from="1596718938198" duration="953000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -127,58 +129,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="315" y="53" width="298" height="178" key="#ESLint" timestamp="1586260945283">
-      <screen x="49" y="27" width="1311" height="741" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1596718999557">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="276" y="25" key="#ESLint/0.0.1360.724@0.0.1360.724" timestamp="1585830275760" />
-    <state x="315" y="53" width="298" height="178" key="#ESLint/49.27.1311.741@49.27.1311.741" timestamp="1586260945283" />
-    <state x="276" y="25" key="#Inspections" timestamp="1585830544105">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state x="276" y="25" key="#Inspections/0.0.1360.724@0.0.1360.724" timestamp="1585830544105" />
-    <state x="139" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586165057437">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state x="139" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.724@0.0.1360.724" timestamp="1586165057437" />
-    <state x="410" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586346522785">
-      <screen x="0" y="0" width="1360" height="738" />
-    </state>
-    <state x="410" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.738@0.0.1360.738" timestamp="1586346522785" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1586165032773">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1360.724@0.0.1360.724" timestamp="1586165032773" />
-    <state width="1339" height="175" key="GridCell.Tab.0.bottom" timestamp="1586165459421">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state width="1339" height="175" key="GridCell.Tab.0.bottom/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
-    <state width="1339" height="175" key="GridCell.Tab.0.center" timestamp="1586165459421">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state width="1339" height="175" key="GridCell.Tab.0.center/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
-    <state width="1339" height="175" key="GridCell.Tab.0.left" timestamp="1586165459420">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state width="1339" height="175" key="GridCell.Tab.0.left/0.0.1360.724@0.0.1360.724" timestamp="1586165459420" />
-    <state width="1339" height="175" key="GridCell.Tab.0.right" timestamp="1586165459421">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state width="1339" height="175" key="GridCell.Tab.0.right/0.0.1360.724@0.0.1360.724" timestamp="1586165459421" />
-    <state x="207" y="0" key="SettingsEditor" timestamp="1585830240515">
-      <screen x="0" y="0" width="1360" height="724" />
-    </state>
-    <state x="207" y="0" key="SettingsEditor/0.0.1360.724@0.0.1360.724" timestamp="1585830240515" />
-    <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586363135847">
-      <screen x="0" y="0" width="1360" height="738" />
-    </state>
-    <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.724@0.0.1360.724" timestamp="1585839164268" />
-    <state x="332" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.738@0.0.1360.738" timestamp="1586363135847" />
-    <state x="343" y="46" width="698" height="692" key="search.everywhere.popup" timestamp="1586362409873">
-      <screen x="0" y="0" width="1360" height="738" />
-    </state>
-    <state x="343" y="45" width="672" height="678" key="search.everywhere.popup/0.0.1360.724@0.0.1360.724" timestamp="1586166221249" />
-    <state x="343" y="46" width="698" height="692" key="search.everywhere.popup/0.0.1360.738@0.0.1360.738" timestamp="1586362409873" />
-    <state x="380" y="73" width="672" height="694" key="search.everywhere.popup/49.27.1311.741@49.27.1311.741" timestamp="1586261998014" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596718999557" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
