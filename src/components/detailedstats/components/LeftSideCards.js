@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export default class LeftSideCards extends React.Component {
     render() {
@@ -34,4 +35,7 @@ export default class LeftSideCards extends React.Component {
 
         )
     }
+}
+LeftSideCards.propTypes = {
+    cities: PropTypes.array
 }

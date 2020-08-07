@@ -1,5 +1,6 @@
 import React from "react";
 import {Map, TileLayer} from "react-leaflet";
+import PropTypes from 'prop-types';
 
 export default class DataCard extends React.Component {
     render() {
@@ -25,4 +26,8 @@ export default class DataCard extends React.Component {
             </div>
         );
     }
+}
+
+DataCard.propTypes = {
+    city: PropTypes.object
 }

@@ -16,32 +16,20 @@ export default class InfoCards extends React.Component {
     }
 
     async getData() {
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/DateDiffCasesDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
+        let FetchStatsForToday = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/DateDiffCasesDataset.json');
+        let FetchCovidStats = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json');
+        let FetchMostInfectedCity = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
+
+        setTimeout(async () => {
             this.setState({
-                todayStats: result,
-            })
-        });
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
-            this.setState({
-                covidStats: result,
-            })
-        });
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
-            this.setState({
-                mostInfectedCity: Object.entries(result).sort((a, b) => {
+                loading: false,
+                covidStats: await FetchCovidStats.json(),
+                todayStats: await FetchStatsForToday.json(),
+                mostInfectedCity: Object.entries(await FetchMostInfectedCity.json()).sort((a, b) => {
                     return b[1].infected - a[1].infected
                 })[0]
-            })
-        });
-        this.setState({
-            loading: false
-        });
+            });
+        }, 1600);
     }
 
     componentDidMount() {
@@ -56,7 +44,7 @@ export default class InfoCards extends React.Component {
     render() {
         const {covidStats, loading, todayStats, mostInfectedCity} = this.state;
         return (
-            <div id="stats" >
+            <div id="stats">
                 {loading &&
                 <LoaderAnimation/>
                 }

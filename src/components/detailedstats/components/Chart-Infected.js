@@ -1,6 +1,7 @@
 import React from "react";
 import { LineChart } from "react-chartkick"
 import "chart.js"
+import PropTypes from "prop-types";
 
 export default class ChartInfected extends React.Component {
 
@@ -24,4 +25,7 @@ export default class ChartInfected extends React.Component {
             </div>
         )
     }
+}
+ChartInfected.propTypes = {
+    chart: PropTypes.object
 }

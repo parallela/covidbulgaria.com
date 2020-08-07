@@ -21,8 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Gender.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Gender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Infected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Infected.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Cured.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Cured.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Deaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Deaths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/LeftSideCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/LeftSideCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +65,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -109,7 +119,10 @@
       <workItem from="1586377995069" duration="341000" />
       <workItem from="1586418294485" duration="3923000" />
       <workItem from="1586708075528" duration="169000" />
-      <workItem from="1596718938198" duration="953000" />
+      <workItem from="1596718938198" duration="3233000" />
+      <workItem from="1596727697031" duration="871000" />
+      <workItem from="1596730846781" duration="85000" />
+      <workItem from="1596785672488" duration="9508000" />
     </task>
     <servers />
   </component>
@@ -129,10 +142,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-900" y="111" key="FileChooserDialogImpl" timestamp="1596730927440">
+      <screen x="-1360" y="0" width="1360" height="738" />
+    </state>
+    <state x="-900" y="111" key="FileChooserDialogImpl/0.0.1280.689/-1360.0.1360.738@-1360.0.1360.738" timestamp="1596730927440" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1596718999557">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596718999557" />
+    <state x="-1017" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596795232307">
+      <screen x="-1360" y="0" width="1360" height="738" />
+    </state>
+    <state x="-1017" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1280.689/-1360.0.1360.738@-1360.0.1360.738" timestamp="1596795232307" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -10,52 +10,53 @@ export default class Search extends React.Component {
 
         this.state = {
             options: [],
-            isLoading: false,
             cityData: [],
+            loading: false,
             showCard: false,
         };
 
     };
 
     _handleSearch = (query) => {
+        console.log(query);
+
+        let queryToUpperCase = query[0].toUpperCase() + query.substr(1).toLowerCase();
+
         setTimeout(() => {
-            this.getCityData(query)
-        },1000);
-        this.setState({isLoading: true})
+            this.getCityData(queryToUpperCase);
+        }, 1700);
+        this.setState({loading: true})
     };
 
-    async getCityData(city) {
-        await fetch('https://raw.giubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
-            if (result[city] === undefined) {
-                this.setState({showCard: false});
-            } else {
-                this.setState({
-                    cityData: result[city],
-                    isLoading: false,
-                    showCard: true,
-                });
-            }
-        });
-    }
 
-    async getCitiesList() {
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
-            this.setState({
-                options: Object.keys(result),
-            });
-        });
+    async getCityData(city) {
+        let ShowCardInformation = false;
+        let FetchCurrentCity = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
+        let FetchAllCities = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
+        let CurrentCityToJson = await FetchCurrentCity.json();
+
+        if (CurrentCityToJson[city] === undefined) {
+            ShowCardInformation = false;
+        } else {
+            ShowCardInformation = true
+        }
+
+        this.setState({
+            options: Object.keys(await FetchAllCities.json()),
+            cityData: CurrentCityToJson[city],
+            loading: false,
+            showCard: ShowCardInformation
+        })
+
+
     }
 
     componentDidMount() {
-        this.getCitiesList();
+        this.getCityData();
     }
 
     render() {
-        const {cityData, showCard} = this.state;
+        const {cityData, showCard, loading} = this.state;
         return (
             <div id="search">
                 <ParticleElement/>
@@ -65,6 +66,7 @@ export default class Search extends React.Component {
                     <h3>Вижте информация за вашия град:</h3>
 
                     <AsyncTypeahead
+                        isLoading={loading}
                         {...this.state}
                         id="async-city-search"
                         labelKey="cityname"

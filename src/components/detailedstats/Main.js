@@ -25,38 +25,25 @@ export default class DetailedStats extends React.Component {
     }
 
     async getData() {
-        await fetch("https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json", {
-            method: 'GET'
-        }).then(res => res.json()).then((result) => {
+        let FetchStatsForToday = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/DateDiffCasesDataset.json');
+        let FetchCovidStats = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json');
+        let FetchMostInfectedCities = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
+
+        setTimeout(async () => {
             this.setState({
-                covidStats: result,
-            });
-        });
-        await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json', {
-            method: 'GET',
-        }).then(res => res.json()).then((result) => {
-            this.setState({
-                cities: Object.entries(result).sort((a, b) => {
+                loading: false,
+                covidStats: await FetchCovidStats.json(),
+                chartData: await FetchStatsForToday.json(),
+                cities: Object.entries(await FetchMostInfectedCities.json()).sort((a, b) => {
                     return b[1].infected - a[1].infected
                 })
-            })
-        });
-        await fetch("https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/DateCasesDataset.json")
-            .then(res => res.json())
-            .then((result) => {
-                this.setState({
-                    chartData: Object.fromEntries(Object.entries(result.infected).map(entry => [entry[0], entry[1].cases]))
-                });
-            })
-        this.setState({
-            loading: false
-        });
+            });
+        }, 1600);
     }
 
     componentDidMount() {
         this.getData();
     }
-
 
     render() {
         const {loading, covidStats, cities, chartData} = this.state

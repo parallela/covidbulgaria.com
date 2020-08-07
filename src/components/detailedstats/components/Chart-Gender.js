@@ -1,6 +1,7 @@
 import React from "react";
 import {PieChart} from "react-chartkick";
 import "chart.js"
+import PropTypes from "prop-types";
 
 export default class ChartGender extends React.Component {
 
@@ -19,4 +20,7 @@ export default class ChartGender extends React.Component {
             </div>
         )
     }
+}
+ChartGender.propTypes = {
+    statistics: PropTypes.object
 }

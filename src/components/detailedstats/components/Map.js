@@ -1,5 +1,6 @@
 import React from "react";
 import {Circle, CircleMarker, Map, TileLayer, Tooltip} from "react-leaflet";
+import PropTypes from "prop-types";
 
 export default class MapView extends React.Component {
     render() {
@@ -34,4 +35,7 @@ export default class MapView extends React.Component {
             </div>
         )
     }
+}
+MapView.propTypes = {
+    cities: PropTypes.array
 }

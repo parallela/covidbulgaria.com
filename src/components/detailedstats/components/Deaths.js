@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 export default class Deaths extends React.Component {
 
@@ -20,4 +21,7 @@ export default class Deaths extends React.Component {
         )
     }
 
+}
+Deaths.propTypes = {
+    cities: PropTypes.array
 }

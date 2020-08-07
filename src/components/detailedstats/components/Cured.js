@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class Cured extends React.Component{
 
@@ -20,5 +21,7 @@ export default class Cured extends React.Component{
             </div>
         )
     }
-
+}
+Cured.propTypes = {
+    cities: PropTypes.array
 }
