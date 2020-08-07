@@ -7,7 +7,7 @@ export default class ChartInfected extends React.Component {
 
     render() {
         return (
-            <div className="col col-md-6 h-40">
+            <div className="col col-md-12 h-40">
                 <div className="card border-dark mb-3">
                     <div className="card-header"><i className="fa fa-chart-area"></i> Графична статистика: Месеци /
                         Заразени
@@ -27,5 +27,5 @@ export default class ChartInfected extends React.Component {
     }
 }
 ChartInfected.propTypes = {
-    chart: PropTypes.object
+    chart: PropTypes.array.isRequired
 }

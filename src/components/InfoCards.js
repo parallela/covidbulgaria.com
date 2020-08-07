@@ -20,6 +20,7 @@ export default class InfoCards extends React.Component {
         let FetchCovidStats = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json');
         let FetchMostInfectedCity = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
 
+
         setTimeout(async () => {
             this.setState({
                 loading: false,
@@ -128,24 +129,30 @@ export default class InfoCards extends React.Component {
                     <div className="col-md-4 mt-3">
                         <div className="card text-center">
                             <div className="card-header">
-                                <i className="fas fa-venus-mars"></i> Полова статистика
+                                <i className="fas fa-prescription-bottle"></i> Направени PCR тестове
                             </div>
                             <div className="card-body">
                                 <blockquote className="blockquote">
                                     <div className="card-text">
-                                        <h3>{covidStats.men}</h3>
+                                        <h3>{covidStats.pcr_tests}</h3>
                                     </div>
-                                    <footer className="blockquote-footer text-success">Заразени мъже</footer>
+                                    <footer className="blockquote-footer">Общо</footer>
                                 </blockquote>
                                 <hr/>
                                 <blockquote className="blockquote">
                                     <div className="card-text">
-                                        <h3>{covidStats.women}</h3>
+                                        <h3>{todayStats.pcr_tests[new Date().toISOString().slice(0, 10)].cases}</h3>
                                     </div>
-                                    <footer className="blockquote-footer text-danger">Заразени жени</footer>
+                                    <footer className="blockquote-footer">За последното денонощие</footer>
+
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
+                                <small>
+                                    С {
+                                    todayStats.pcr_tests[new Date().toISOString().slice(0, 10)].cases - todayStats.pcr_tests[new Date(new Date().setDate(new Date().getDate() - 1)).toISOString().slice(0, 10)].cases
+                                } направени теста повече от вчера
+                                </small> <br />
                                 Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
                             </div>
                         </div>

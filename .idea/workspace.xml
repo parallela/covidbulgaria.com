@@ -21,17 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DataCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InfoCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewsCard.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/detailedstats/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Gender.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Gender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Gender.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Infected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Chart-Infected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Cured.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Cured.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Deaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Deaths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/LeftSideCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/LeftSideCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detailedstats/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detailedstats/components/Map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +117,8 @@
       <workItem from="1596718938198" duration="3233000" />
       <workItem from="1596727697031" duration="871000" />
       <workItem from="1596730846781" duration="85000" />
-      <workItem from="1596785672488" duration="9508000" />
+      <workItem from="1596785672488" duration="10541000" />
+      <workItem from="1596819986103" duration="4235000" />
     </task>
     <servers />
   </component>
@@ -142,6 +138,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-950" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596823116020">
+      <screen x="-1360" y="0" width="1360" height="738" />
+    </state>
+    <state x="-950" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689/-1360.0.1360.738@-1360.0.1360.738" timestamp="1596823116020" />
     <state x="-900" y="111" key="FileChooserDialogImpl" timestamp="1596730927440">
       <screen x="-1360" y="0" width="1360" height="738" />
     </state>
@@ -160,7 +160,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Home.js</url>
-          <line>5</line>
+          <line>4</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
