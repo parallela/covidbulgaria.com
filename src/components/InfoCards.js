@@ -12,6 +12,7 @@ export default class InfoCards extends React.Component {
             covidStats: [],
             todayStats: [],
             mostInfectedCity: [],
+            calcPcrTest: 0,
         }
     }
 
@@ -19,16 +20,23 @@ export default class InfoCards extends React.Component {
         let FetchStatsForToday = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/DateDiffCasesDataset.json');
         let FetchCovidStats = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/TotalsDataset.json');
         let FetchMostInfectedCity = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');
+        let TodayStats = await FetchStatsForToday.json();
+        let CovidStats = await FetchCovidStats.json();
+        let MostInfectedCity = await FetchMostInfectedCity.json();
 
+        let todayPcrTests = TodayStats.pcr_tests[new Date().toISOString().slice(0, 10)].cases;
+        let yestardayPcrTests = TodayStats.pcr_tests[new Date(new Date().setDate(new Date().getDate() - 1)).toISOString().slice(0, 10)].cases;
+        let CalcPcrTests = Math.abs( todayPcrTests - yestardayPcrTests);
 
         setTimeout(async () => {
             this.setState({
                 loading: false,
-                covidStats: await FetchCovidStats.json(),
-                todayStats: await FetchStatsForToday.json(),
-                mostInfectedCity: Object.entries(await FetchMostInfectedCity.json()).sort((a, b) => {
+                covidStats: CovidStats,
+                todayStats: TodayStats,
+                mostInfectedCity: Object.entries(MostInfectedCity).sort((a, b) => {
                     return b[1].infected - a[1].infected
-                })[0]
+                })[0],
+                calcPcrTests: Math.abs(CalcPcrTests)
             });
         }, 1600);
     }
@@ -43,7 +51,8 @@ export default class InfoCards extends React.Component {
     }
 
     render() {
-        const {covidStats, loading, todayStats, mostInfectedCity} = this.state;
+        const {covidStats, loading, todayStats, mostInfectedCity, calcPcrTests} = this.state;
+
         return (
             <div id="stats">
                 {loading &&
@@ -149,9 +158,7 @@ export default class InfoCards extends React.Component {
                             </div>
                             <div className="card-footer text-muted">
                                 <small>
-                                    С {
-                                    todayStats.pcr_tests[new Date().toISOString().slice(0, 10)].cases - todayStats.pcr_tests[new Date(new Date().setDate(new Date().getDate() - 1)).toISOString().slice(0, 10)].cases
-                                } направени теста повече от вчера
+                                    С {calcPcrTests} направени теста повече от вчера
                                 </small> <br />
                                 Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
                             </div>
