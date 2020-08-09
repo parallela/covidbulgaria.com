@@ -1,8 +1,6 @@
 import React from "react";
-import Moment from "react-moment";
+import moment from "moment";
 import LoaderAnimation from "./detailedstats/components/LoaderAnimation";
-
-Moment.globalLocale = 'bg';
 
 export default class InfoCards extends React.Component {
     constructor(props) {
@@ -13,7 +11,15 @@ export default class InfoCards extends React.Component {
             todayStats: [],
             mostInfectedCity: [],
             calcPcrTest: 0,
+            deathPercentages: 0,
         }
+    }
+
+    getPercentBetweenTwoNumbers(number, number2) {
+        let firstNumberPercent = number / 100;
+        let calcPercent = number2 / firstNumberPercent;
+
+        return calcPercent;
     }
 
     async getData() {
@@ -26,7 +32,8 @@ export default class InfoCards extends React.Component {
 
         let todayPcrTests = TodayStats.pcr_tests[new Date().toISOString().slice(0, 10)].cases;
         let yestardayPcrTests = TodayStats.pcr_tests[new Date(new Date().setDate(new Date().getDate() - 1)).toISOString().slice(0, 10)].cases;
-        let CalcPcrTests = Math.abs( todayPcrTests - yestardayPcrTests);
+        let CalcPcrTests = Math.abs(todayPcrTests - yestardayPcrTests);
+        let DeathPercentages = this.getPercentBetweenTwoNumbers(CovidStats.infected, CovidStats.fatal)
 
         setTimeout(async () => {
             this.setState({
@@ -36,7 +43,8 @@ export default class InfoCards extends React.Component {
                 mostInfectedCity: Object.entries(MostInfectedCity).sort((a, b) => {
                     return b[1].infected - a[1].infected
                 })[0],
-                calcPcrTests: Math.abs(CalcPcrTests)
+                calcPcrTests: Math.abs(CalcPcrTests),
+                deathPercentages: DeathPercentages
             });
         }, 1600);
     }
@@ -51,7 +59,7 @@ export default class InfoCards extends React.Component {
     }
 
     render() {
-        const {covidStats, loading, todayStats, mostInfectedCity, calcPcrTests} = this.state;
+        const {covidStats, loading, todayStats, mostInfectedCity, calcPcrTests, deathPercentages} = this.state;
 
         return (
             <div id="stats">
@@ -81,7 +89,8 @@ export default class InfoCards extends React.Component {
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                <small>{deathPercentages.toFixed(2)}% от заразените са починали</small> <br/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>
@@ -106,7 +115,7 @@ export default class InfoCards extends React.Component {
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>
@@ -131,7 +140,7 @@ export default class InfoCards extends React.Component {
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>
@@ -159,8 +168,8 @@ export default class InfoCards extends React.Component {
                             <div className="card-footer text-muted">
                                 <small>
                                     С {calcPcrTests} направени теста повече от вчера
-                                </small> <br />
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                </small> <br/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>
@@ -185,7 +194,7 @@ export default class InfoCards extends React.Component {
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>
@@ -214,7 +223,7 @@ export default class InfoCards extends React.Component {
                                 </blockquote>
                             </div>
                             <div className="card-footer text-muted">
-                                Последно обновено: <Moment fromNow date={covidStats.timestamp}/>
+                                Последно обновено: {moment(covidStats.timestamp, 'HH:mm A').startOf('day').fromNow()}
                             </div>
                         </div>
                     </div>

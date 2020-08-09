@@ -9,7 +9,7 @@ export default class Home extends React.Component {
         return (
             <div id={'home'}>
                 <ParticleElement />
-                <div className="container mt-5 mb-2">
+                <div className="container mt-5 mb-2">/
                     <InfoCards/>
                     <AlertCard />
                 </div>
