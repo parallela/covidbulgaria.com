@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="" />
+    <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="1Zz7MOd7k7U6DhGK7ck3K4S9TmJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -53,6 +62,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -115,6 +125,8 @@
       <workItem from="1596881200747" duration="1622000" />
       <workItem from="1596909909050" duration="27000" />
       <workItem from="1596964513097" duration="2849000" />
+      <workItem from="1603110468399" duration="803000" />
+      <workItem from="1603453821880" duration="959000" />
     </task>
     <servers />
   </component>
@@ -146,9 +158,14 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596873315966" />
-    <state x="323" y="55" width="672" height="633" key="search.everywhere.popup" timestamp="1596966943671">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="507" y="207" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1603453875574">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="507" y="207" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1280.680@0.0.1280.680" timestamp="1603453875574" />
+    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup" timestamp="1603453827671">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1603453827671" />
     <state x="-1017" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1280.689/-1360.0.1360.738@-1360.0.1360.738" timestamp="1596795232307" />
     <state x="323" y="55" width="672" height="633" key="search.everywhere.popup/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596966943671" />
   </component>

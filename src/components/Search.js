@@ -18,13 +18,16 @@ export default class Search extends React.Component {
     };
 
     _handleSearch = (query) => {
-        console.log(query);
+        // Format the query from array to string
+        let searchQueryToString = query.toString();
 
-        let queryToUpperCase = query[0].toUpperCase() + query.substr(1).toLowerCase();
+        // Make first letter upperCase
+        let queryToUpperCase = searchQueryToString.charAt(0).toUpperCase() + searchQueryToString.slice(1);
 
+        // Get the city data by passing the city.
         setTimeout(() => {
             this.getCityData(queryToUpperCase);
-        }, 1700);
+        }, 1500);
         this.setState({loading: true})
     };
 
