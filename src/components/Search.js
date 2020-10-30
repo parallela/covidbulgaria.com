@@ -31,7 +31,6 @@ export default class Search extends React.Component {
         this.setState({loading: true})
     };
 
-
     async getCityData(city) {
         let ShowCardInformation = false;
         let FetchCurrentCity = await fetch('https://raw.githubusercontent.com/COVID-19-Bulgaria/covid-database/master/Bulgaria/GeoDataset.json');

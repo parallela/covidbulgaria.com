@@ -20,6 +20,12 @@ export default class Navbar extends React.Component {
         });
     }
 
+
+    isMobile() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) return true;
+        return false;
+    }
+
     componentDidMount() {
         this.getTotalCases();
     }
@@ -56,12 +62,14 @@ export default class Navbar extends React.Component {
                             to="/privacy-policy"
                             activeClassName="active"
                         ><i className="fa fa-info"></i> Политика за поверителност</NavLink>
+                        {!this.isMobile() &&
                         <NavLink
                             className={'nav-item nav-link'}
                             to="/details-stats"
                             activeClassName="active"
-                        ><i className="fa fa-info-circle"></i> Детайлна статистика <small className={'text-danger'}>(BETA) (Only for desktops)</small> </NavLink>
-
+                        ><i className="fa fa-info-circle"></i> Детайлна статистика <small className={'text-danger'}>(BETA)
+                            (Only for desktops)</small> </NavLink>
+                        }
                     </div>
 
                 </div>

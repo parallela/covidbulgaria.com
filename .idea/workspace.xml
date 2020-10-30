@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5ca4c1a-9e50-463d-a8d0-c51d8b8710ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +126,8 @@
       <workItem from="1596909909050" duration="27000" />
       <workItem from="1596964513097" duration="2849000" />
       <workItem from="1603110468399" duration="803000" />
-      <workItem from="1603453821880" duration="959000" />
+      <workItem from="1603453821880" duration="1422000" />
+      <workItem from="1604062386341" duration="270000" />
     </task>
     <servers />
   </component>
@@ -158,14 +159,18 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596873315966" />
+    <state x="280" y="29" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604062507805">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="29" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1604062507805" />
     <state x="507" y="207" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1603453875574">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="507" y="207" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1280.680@0.0.1280.680" timestamp="1603453875574" />
-    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup" timestamp="1603453827671">
+    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup" timestamp="1604062398725">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1603453827671" />
+    <state x="323" y="54" width="672" height="625" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1604062398725" />
     <state x="-1017" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1280.689/-1360.0.1360.738@-1360.0.1360.738" timestamp="1596795232307" />
     <state x="323" y="55" width="672" height="633" key="search.everywhere.popup/0.0.1280.689/-1360.0.1360.738@0.0.1280.689" timestamp="1596966943671" />
   </component>
